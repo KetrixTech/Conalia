@@ -4,8 +4,8 @@
 #include <windows.h>
 #include <time.h>
 #include<unistd.h>
-#define Height 5 //迷宫的高度，必须为奇数
-#define Width 5 //迷宫的宽度，必须为奇数
+#define Height 15 //迷宫的高度，必须为奇数
+#define Width 15 //迷宫的宽度，必须为奇数
 #define Wall 1
 #define Road 0
 #define Start 2
