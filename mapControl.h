@@ -30,14 +30,14 @@ void sy(int a)
 		{
 			if(f&&rand()%2&&(j==0||i==0||j==51||i==51))
 			{
-				cout<<"0 ";
+				printf("0 ")
 				f--;
 				if(f==0)f=rand()%2;
 			}
-			else if(dt[i][j]==0)cout<<"1 ";
-			else cout<<"  ";
+			else if(dt[i][j]==0)printf("1 ");
+			else printf("  ");
 		}
-		cout<<"\n";
+		printf("\n");
 	}
 	
 }
@@ -62,7 +62,7 @@ void tldyx(int a)
 		if(y==win&&x==30)
 		{
 			system("cls");
-			cout<<"WIN";
+			printf("WIN");
 			return;
 		}	
 		if(x==30)x=2;
@@ -77,7 +77,7 @@ void tldyx(int a)
 		if(dx==x&&dy==y)
 		{
 			system("cls");
-			cout<<"game over";
+			printf("game over");
 			sleep(1);
 			return;
 		}
@@ -91,11 +91,11 @@ void tldyx(int a)
 			{
 				if(30-x<2&&winc<2&&i==win&&j==30)printf("ÃÅ");
 				else if(j==1||i==1||j==30||i==20)printf("Ç½");
-				else if(i==dy&&dx==j)cout<<"¶Å";
-				else if(i==y&&x==j)cout<<"Ë§";
+				else if(i==dy&&dx==j)printf("¶Å");
+				else if(i==y&&x==j)printf("Ë§");
 				else printf("  ");
 			}
-			cout<<"\n";
+			printf("\n");
 		}
 		a:
 			if(_kbhit())
