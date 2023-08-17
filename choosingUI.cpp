@@ -30,6 +30,7 @@ int main()
 	_gameData data[100];
 	int lastx,lasty;
 	system("cls");
+	printf("\033[?25l");
 	while(1)
 	{
 		if(lastx!=getWindowSize.getWindowHeight())
@@ -43,6 +44,7 @@ int main()
 			lasty=getWindowSize.getWindowWidth();
 		}
 		printf("\033[0;0H");
+		printf("\033[?25l");
 		choosingUIBackground(data,10);
 	}
 }
