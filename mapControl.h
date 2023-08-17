@@ -30,7 +30,7 @@ void sy(int a)
 		{
 			if(f&&rand()%2&&(j==0||i==0||j==51||i==51))
 			{
-				printf("0 ")
+				printf("0 ");
 				f--;
 				if(f==0)f=rand()%2;
 			}
